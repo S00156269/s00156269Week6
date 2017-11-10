@@ -195,7 +195,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711101121351_userFieldsAdded.cs" />
+    <Compile Include="Migrations\201711101121351_userFieldsAdded.Designer.cs">
+      <DependentUpon>201711101121351_userFieldsAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ClubModelMigrations\201711101145318_InitialiseClubs.cs" />
+    <Compile Include="Migrations\ClubModelMigrations\201711101145318_InitialiseClubs.Designer.cs">
+      <DependentUpon>201711101145318_InitialiseClubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ClubModelMigrations\Configuration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ClubModels\Club.cs" />
+    <Compile Include="Models\ClubModels\ClubEvent.cs" />
+    <Compile Include="Models\ClubModels\ClubsDbContext.cs" />
+    <Compile Include="Models\ClubModels\Members.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -208,6 +222,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Migrations\ClubModelMigrations\MigrationCommands.txt" />
+    <Content Include="Migrations\MigrationCommands.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config" />
@@ -272,6 +288,14 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711101121351_userFieldsAdded.resx">
+      <DependentUpon>201711101121351_userFieldsAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ClubModelMigrations\201711101145318_InitialiseClubs.resx">
+      <DependentUpon>201711101145318_InitialiseClubs.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
